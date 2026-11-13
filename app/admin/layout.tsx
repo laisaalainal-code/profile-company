@@ -14,6 +14,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import { LogoutMenuItem } from "./logout-menu-item"
 
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -41,7 +42,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
-          <DropdownMenuItem variant="destructive">Log out</DropdownMenuItem>
+          <LogoutMenuItem/>
         </DropdownMenuGroup>
       </DropdownMenuContent>
       
